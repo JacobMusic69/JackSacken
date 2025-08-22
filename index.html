@@ -14,17 +14,17 @@
       min-height: 100vh;
       margin: 0;
       display: flex;
-      flex-direction: column;
-      justify-content: center; /* centers vertically */
-      align-items: center;     /* centers horizontally */
+      justify-content: center;  /* centers vertically */
+      align-items: center;      /* centers horizontally */
       text-align: center;
     }
 
-    header {
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      max-width: 700px;
+      padding: 20px;
     }
 
     img {
@@ -43,22 +43,20 @@
     }
 
     h2 {
-      margin: 10px 0;
+      margin: 10px 0 20px 0;
       font-weight: 400;
       color: #b3b3b5;
       font-size: 1.3em;
     }
 
     .bio {
-      max-width: 600px;
-      margin: 30px auto;
       font-size: 1.1em;
       line-height: 1.8;
-      padding: 0 20px;
+      margin: 20px 0;
     }
 
     .buttons {
-      margin: 20px auto 40px auto;
+      margin-top: 20px;
     }
 
     .button {
@@ -81,22 +79,22 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <img src="jake.jpeg" alt="Jake Sacken">
     <h1>Jake Sacken</h1>
     <h2>Indie-Rock Artist from New York</h2>
-  </header>
-  
-  <section class="bio">
-    <p>Jake Sacken is a bum from Brooklyn, NY.  
-    You too can be a bum, go check out my music to find out how, NOW!</p>
-  </section>
-  
-  <section class="buttons">
-    <a class="button" href="https://www.youtube.com/@jakesacken7245" target="_blank">YouTube</a>
-    <a class="button" href="https://open.spotify.com/artist/3dYy4JaydRktRxfZqLddyd?si=RQdEHKc6QFCUXi3BD1vS3Q" target="_blank">Spotify</a>
-    <a class="button" href="https://www.instagram.com/jakesacken/" target="_blank">Instagram</a>
-    <a class="button" href="https://www.tiktok.com/@jakesacken" target="_blank">TikTok</a>
-  </section>
+    
+    <section class="bio">
+      <p>Jake Sacken is a bum from Brooklyn, NY.  
+      You too can be a bum, go check out my music to find out how, NOW!</p>
+    </section>
+    
+    <section class="buttons">
+      <a class="button" href="https://www.youtube.com/@jakesacken7245" target="_blank">YouTube</a>
+      <a class="button" href="https://open.spotify.com/artist/3dYy4JaydRktRxfZqLddyd?si=RQdEHKc6QFCUXi3BD1vS3Q" target="_blank">Spotify</a>
+      <a class="button" href="https://www.instagram.com/jakesacken/" target="_blank">Instagram</a>
+      <a class="button" href="https://www.tiktok.com/@jakesacken" target="_blank">TikTok</a>
+    </section>
+  </div>
 </body>
 </html>
